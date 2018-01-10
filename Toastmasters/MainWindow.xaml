@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Toastmasters"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="Toastmasters Automator" Height="750" Width="1124" Icon="Toastmasters_2011.png" Background="White" ResizeMode="NoResize" BorderBrush="#FFFDEA88" BorderThickness="3">
+	<Grid Margin="0,0,0,0">
+		<Grid.Background>
+			<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+				<GradientStop Color="#FF6D222F" Offset="0"/>
+				<GradientStop Color="#FF782633" Offset="1"/>
+			</LinearGradientBrush>
+		</Grid.Background>
+		<Image Source="C:\Users\m_a_x\Documents\Software Dev\Random Projects\Toastmasters\Toastmasters\Toastmasters_2011.png" Height="249" VerticalAlignment="Top" HorizontalAlignment="Left" Width="255"/>
+		<Label x:Name="Title_Label" Content="The Toastmasters Automator" HorizontalAlignment="Left" Margin="388,46,0,0" VerticalAlignment="Top" Width="506" FontFamily="Arial Unicode MS" Foreground="#FFFDFDFD" FontSize="36" FontStretch="UltraExpanded" FontWeight="ExtraBlack" BorderBrush="#FFFDEA88" BorderThickness="0,0,0,2"/>
+		<Button x:Name="Word_of_the_day" Content="Word of the Day" HorizontalAlignment="Left" Margin="82,488,0,0" VerticalAlignment="Top" Width="128" Background="White" Foreground="#FF762532" Cursor="Hand" BorderBrush="#FFFDEA88" BorderThickness="2" FontWeight="ExtraBlack" FontSize="16" Height="28" FontFamily="Arial Unicode MS" Click="Word_of_the_day_Click"/>
+		<Button x:Name="Table_Topics" Content="Table Topic" HorizontalAlignment="Left" Margin="82,639,0,0" VerticalAlignment="Top" Width="128" Background="White" Foreground="#FF702330" Cursor="Hand" BorderBrush="#FFFDEA88" BorderThickness="2" FontWeight="ExtraBlack" FontSize="16" Height="28" FontFamily="Arial Unicode MS" Click="Table_Topics_Click"/>
+		<Button x:Name="Joke_Thought" Content="Joke of the Day" HorizontalAlignment="Left" Margin="82,295,0,0" VerticalAlignment="Top" Width="128" Background="White" Foreground="#FF702330" Click="Joke_of_the_day" Cursor="Hand" BorderBrush="#FFFDEA88" BorderThickness="2" FontWeight="ExtraBlack" FontSize="16" Height="28" FontFamily="Arial Unicode MS"/>
+		<TextBox x:Name="joketextbox" HorizontalAlignment="Left" Height="150" Margin="273,233,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="732" BorderThickness="3" BorderBrush="#FFFDEA88" Foreground="#FF712330" VerticalContentAlignment="Center" FontSize="18" FontFamily="Arial Unicode MS" ToolTip="Click the button for a random joke of the day" IsReadOnly="True"/>
+		<TextBox x:Name="word_of_the_day" HorizontalAlignment="Left" Height="158" Margin="273,428,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="732" BorderThickness="3,3,3,0" BorderBrush="#FFFDEA88" Foreground="#FF712330" VerticalContentAlignment="Center" FontSize="18" FontFamily="Arial Unicode MS" ToolTip="Click the button for the random word of the day" IsReadOnly="True"/>
+		<TextBox x:Name="table_topic" HorizontalAlignment="Left" Height="58" Margin="273,625,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="732" BorderThickness="3" BorderBrush="#FFFDEA88" Foreground="#FF712330" VerticalContentAlignment="Center" FontSize="18" FontFamily="Arial Unicode MS" ToolTip="Click the button for a random table topic" IsReadOnly="True"/>
+		<TextBox x:Name="timerbox" HorizontalAlignment="Left" Height="44" Margin="955,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" BorderThickness="2" BorderBrush="#FFFDEA88" Foreground="#FF712330" VerticalContentAlignment="Center" FontSize="20" FontFamily="Arial Unicode MS" HorizontalContentAlignment="Center" IsReadOnly="True"/>
+
+	</Grid>
 </Window>
